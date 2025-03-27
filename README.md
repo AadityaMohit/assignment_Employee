@@ -1,12 +1,70 @@
-# React + Vite
+# EmployWise React Assignment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+This is a React application that integrates with the Reqres API to perform basic user management functions, including authentication, user listing, editing, and deletion.
 
-Currently, two official plugins are available:
+## Features
+### Level 1: Authentication
+- Users can log in using credentials:
+  - **Email**: `eve.holt@reqres.in`
+  - **Password**: `cityslicka`
+- On successful login, a token is stored in local storage, and the user is redirected to the **User List** page.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Level 2: List All Users
+- Fetches users from the API and displays them in a structured layout.
+- Includes pagination for navigating through users.
+- **Client-side filtering**: Users can be searched by first name, last name, or email.
 
-## Expanding the ESLint configuration
+### Level 3: Edit, Delete, and Update Users
+- **Edit:** Users can update their first name, last name, and email.
+- **Delete:** Users can be removed from the list.
+- Displays appropriate success/error messages.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+- **Frontend:** React (Vite)
+- **HTTP Requests:** Fetch API
+- **State Management:** React Hooks
+- **Routing:** React Router
+- **Styling:** Inline CSS
+
+## Setup Instructions
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/employwise-assignment.git
+   cd employwise-assignment
+   ```
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+3. **Run the application**
+   ```bash
+   npm run dev
+   ```
+4. **Open in browser**
+   - Navigate to `http://localhost:5173/`
+   
+## API Endpoints Used
+- **Login:** `POST https://reqres.in/api/login`
+- **Fetch Users:** `GET https://reqres.in/api/users?page=1`
+- **Update User:** `PUT https://reqres.in/api/users/{id}`
+- **Delete User:** `DELETE https://reqres.in/api/users/{id}`
+
+## Bonus Features
+- ✅ Client-side search for users
+- ✅ React Router for navigation
+- ✅ Token persistence in local storage
+- ✅ Responsive design
+
+## Deployment
+The app is hosted on **[Your Hosting Service](#)**.
+
+## License
+This project is open-source and free to use.
+
+---
+### **Contributors**
+👨‍💻 **Your Name**  
+📧 your.email@example.com  
+🔗 [GitHub Profile](https://github.com/yourusername)
+
