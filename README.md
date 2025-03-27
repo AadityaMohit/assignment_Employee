@@ -56,15 +56,13 @@ This is a React application that integrates with the Reqres API to perform basic
 - ✅ Token persistence in local storage
 - ✅ Responsive design
 
-## Deployment
-The app is hosted on **[Your Hosting Service](#)**.
+ 
 
 ## License
 This project is open-source and free to use.
 
 ---
 ### **Contributors**
-👨‍💻 **Your Name**  
-📧 your.email@example.com  
-🔗 [GitHub Profile](https://github.com/yourusername)
+  
+🔗 [GitHub Profile](https://github.com/aadityamohit)
 
